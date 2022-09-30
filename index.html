@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <!-- Создание блока Header -->
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <nav class="header__ads">
+                    <!-- Навигация по рекламным ссылкам -->
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Delivery On Time</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Responsive Service</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link">100% Original</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Trusted</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <menu class="menu">
+                <div class="menu__wrapper">
+                    <nav class="menu__side">
+                        <!-- Боковое меню -->
+                        <a href="#!" class="menu__link">
+                            <img src="./img/svg/menu_icon.svg" alt="SideMenu" class="menu__item-link" id="svg">
+                        </a>
+                    </nav>
+
+                    <a href="index.html" class="menu__logo-link">
+                        <img src="./img/svg/logo.svg" alt="Shop" class="menu__logo-link" id="svg">
+                    </a>
+
+                    <nav class="menu__nav">
+                        <!-- Навигация по личному кабинету -->
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#!" class="menu__link">
+                                    <img src="./img/svg/search_icon.svg" alt="Search" class="menu__item-link" id="svg">
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#!" class="menu__link">
+                                    <img src="./img/svg/user_icon.svg" alt="User" class="menu__item-link" id="svg">
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#!" class="menu__link">
+                                    <img src="./img/svg/favorite_icon.svg" alt="Favorite" class="menu__item-link"
+                                        id="svg">
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#!" class="menu__link">
+                                    <img src="./img/svg/cart_icon.svg" alt="Cart" class="menu__item-link" id="svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </menu>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="wrapper">
+            <menu class="menu">
+                <div class="menu__wrapper">
+                    <nav class="menu__side">
+                        <!-- Боковое меню -->
+
+                        <nav class="adress__nav">
+                            <ul class="adress__list">
+                                <li class="adress__item">
+                                    <a href="#!" class="adress__link">Home</a>
+                                </li>
+                                <li class="adress__item">
+                                    <img src="./img/svg/arrow_icon.svg" alt="->" class="adress__arrow">
+                                </li>
+                                <li class="adress__item">
+                                    <a href="#!" class="adress__link">Shop</a>
+                                </li>
+                                <li class="adress__item">
+                                    <img src="./img/svg/arrow_icon.svg" alt="->" class="adress__arrow">
+                                </li>
+                                <li class="adress__item">
+                                    <a href="#!" class="adress__link">Fashion</a>
+                                </li>
+                                <li class="adress__item">
+                                    <img src="./img/svg/arrow_icon.svg" alt="->" class="adress__arrow">
+                                </li>
+                                <li class="adress__item">
+                                    <a href="#!" class="adress__link">Male</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </nav>
+
+                    <div class="menu__wrapper" id="display_options">
+                        <div class="adress__nav">
+                            <!-- Фильтры, настройка отображения колонок -->
+                            <ul class="adress__list">
+
+                                <li class="adress__item">
+                                    <img src="./img/svg/filter_icon.svg" alt="Filter" class="filter__item" id="svg">
+                                </li>
+                                <li class="adress__item">
+                                    <a href="#!" class="text__underline">Filter</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="adress__nav">
+                            <!-- Фильтры, настройка отображения колонок -->
+                            <ul class="adress__list" id="columns">
+                                <li class="adress__item">
+                                    <img src="./img/svg/3col_icon.svg" alt="3 columns" class="filter__item" id="svg">
+                                </li>
+                                <li class="adress__item">
+                                    <!--нужная иконка сломана-->
+                                    <img src="./img/svg/3col_icon.svg" alt="2 columns" class="filter__item" id="svg">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </menu>
+        </div>     
+
+        <!--Категории товаров-->
+        <div class="wrapper">
+            <section class="category">
+                <div class="content__wrapper">
+                    
+                    <div class="category__cards">
+                        <button class="change-category">
+                            <img src="/img/svg/previous_icon.svg" alt="Previous" class="change-arrow">
+                        </button>
+    
+                        <div class="category__card">
+                            <img src="/img/Mask Group.png" alt="Tops" class="category__card-thumb">
+                            <p class="category__name">Tops</p>
+                        </div>
+                        <div class="category__card">
+                            <img src="/img/Mask Group (1).png" alt="Pants" class="category__card-thumb">
+                            <p class="category__name">Pants</p>
+                        </div>
+                        <div class="category__card">
+                            <img src="/img/Mask Group (2).png" alt="Shoes" class="category__card-thumb">
+                            <p class="category__name">Shoes</p>
+                        </div>
+                        <div class="category__card">
+                            <img src="/img/Mask Group (3).png" alt="Accessories" class="category__card-thumb">
+                            <p class="category__name">Accessories</p>
+                        </div>
+
+                        <button class="change-category">
+                            <img src="/img/svg/next_icon.svg" alt="next" class="change-arrow">
+                        </button>
+                    </div>
+
+                    
+                </div>
+            </section>
+
+            <section class="content">
+                <div class="content__wrapper">
+                    <!--карточки товара grid-->
+                    <div class="goods__cards">
+                        <div class="goods__card">
+                            <img src="./img/Image 0.jpg" alt="T-Shirt Groot Black" class="goods__card-thumb">
+                            <div class="container" id="goods_name">
+                                <h1 class="goods__card-title">
+                                    T-Shirt Groot Black
+                                </h1>
+                                <img src="./img/svg/like_icon.svg" alt="Like!" id="like_icon" id="svg">
+                            </div>
+                            <div class="container" id="seller_name">
+
+                                <ul class="n_r_wrap" id="name_rating">
+                                    <li class="n_r_item">
+                                        <h2 class="goods__card-seller" id="shop_name">
+                                            Distro Boy Store
+                                        </h2>
+                                    </li>
+                                    <li class="n_r_item">
+                                        <div class="n_r_item-wrap">
+                                            <img src="./img/svg/rating_icon.svg" alt="Rating" id="rating_icon" id="svg">
+                                            <span id="shop_rating">4.7</span>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <span class="price"> Rp60.000</span>
+
+                            </div>
+                        </div>
+
+                        <div class="goods__card">
+                            <img src="./img/Image (1).jpg" alt="T-Shirt Love Kills" class="goods__card-thumb">
+                            <div class="container" id="goods_name">
+                                <h1 class="goods__card-title">
+                                    T-Shirt Love Kills
+                                </h1>
+                                <img src="./img/svg/like_icon.svg" alt="Like!" id="like_icon" id="svg">
+                            </div>
+                            <div class="container" id="seller_name">
+
+                                <ul class="n_r_wrap" id="name_rating">
+                                    <li class="n_r_item">
+                                        <h2 class="goods__card-seller" id="shop_name">
+                                            Distro Boy Store
+                                        </h2>
+                                    </li>
+                                    <li class="n_r_item">
+                                        <div class="n_r_item-wrap">
+                                            <img src="./img/svg/rating_icon.svg" alt="Rating" id="rating_icon" id="svg">
+                                            <span id="shop_rating">4.7</span>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <span class="price"> Rp100.000</span>
+
+                            </div>
+                        </div>
+
+                        <div class="goods__card">
+                            <img src="./img/Image (2).jpg" alt="T-shirt  I dont Care - Maroon"
+                                class="goods__card-thumb">
+                            <div class="container" id="goods_name">
+                                <h1 class="goods__card-title">
+                                    T-shirt I dont Care - Maroon
+                                </h1>
+                                <img src="./img/svg/like_icon.svg" alt="Like!" id="like_icon" id="svg">
+                            </div>
+                            <div class="container" id="seller_name">
+
+                                <ul class="n_r_wrap" id="name_rating">
+                                    <li class="n_r_item">
+                                        <h2 class="goods__card-seller" id="shop_name">
+                                            Asgore Store
+                                        </h2>
+                                    </li>
+                                    <li class="n_r_item">
+                                        <div class="n_r_item-wrap">
+                                            <img src="./img/svg/rating_icon.svg" alt="Rating" id="rating_icon" id="svg">
+                                            <span id="shop_rating">4.7</span>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <span class="price"> Rp50.000</span>
+
+                            </div>
+                        </div>
+
+                        <div class="goods__card">
+                            <img src="./img/Image (3).jpg" alt="Darwin Casual Safari Shirt-Dark Khaki"
+                                class="goods__card-thumb">
+                            <div class="container" id="goods_name">
+                                <h1 class="goods__card-title">
+                                    Darwin Casual Safari Shirt-Dark Khaki
+                                </h1>
+                                <img src="./img/svg/like_icon.svg" alt="Like!" id="like_icon" id="svg">
+                            </div>
+                            <div class="container" id="seller_name">
+
+                                <ul class="n_r_wrap" id="name_rating">
+                                    <li class="n_r_item">
+                                        <h2 class="goods__card-seller" id="shop_name">
+                                            FunnyFashion
+                                        </h2>
+                                    </li>
+                                    <li class="n_r_item">
+                                        <div class="n_r_item-wrap">
+                                            <img src="./img/svg/rating_icon.svg" alt="Rating" id="rating_icon" id="svg">
+                                            <span id="shop_rating">4.3</span>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <span class="price"> Rp150.000</span>
+
+                            </div>
+                        </div>
+
+                        <div class="goods__card">
+                            <img src="./img/Image (4).jpg" alt="
+                            Arva Casual Shirt-Short Sleeve" class="goods__card-thumb">
+                            <div class="container" id="goods_name">
+                                <h1 class="goods__card-title">
+                                    Arva Casual Shirt-Short Sleeve
+                                </h1>
+                                <img src="./img/svg/like_icon.svg" alt="Like!" id="like_icon" id="svg">
+                            </div>
+                            <div class="container" id="seller_name">
+
+                                <ul class="n_r_wrap" id="name_rating">
+                                    <li class="n_r_item">
+                                        <h2 class="goods__card-seller" id="shop_name">
+                                            PoloSpecialist
+                                        </h2>
+                                    </li>
+                                    <li class="n_r_item">
+                                        <div class="n_r_item-wrap">
+                                            <img src="./img/svg/rating_icon.svg" alt="Rating" id="rating_icon" id="svg">
+                                            <span id="shop_rating">4.5</span>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <span class="price"> Rp120.000</span>
+
+                            </div>
+                        </div>
+
+                        <div class="goods__card">
+                            <img src="./img/Image (5).jpg" alt="Kila Casual Shirt" class="goods__card-thumb">
+                            <div class="container" id="goods_name">
+                                <h1 class="goods__card-title">
+                                    Kila Casual Shirt
+                                </h1>
+                                <img src="./img/svg/like_icon.svg" alt="Like!" id="like_icon" id="svg">
+                            </div>
+                            <div class="container" id="seller_name">
+
+                                <ul class="n_r_wrap" id="name_rating">
+                                    <li class="n_r_item">
+                                        <h2 class="goods__card-seller" id="shop_name">
+                                            You Ready
+                                        </h2>
+                                    </li>
+                                    <li class="n_r_item">
+                                        <div class="n_r_item-wrap">
+                                            <img src="./img/svg/rating_icon.svg" alt="Rating" id="rating_icon" id="svg">
+                                            <span id="shop_rating">4.8</span>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <span class="price"> Rp150.000</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <!--подписаться-->
+
+            <div class="subscribe__wrapper">
+
+                <div class="subscribe__form">
+                    <h1 class="join">JOIN US</h1>
+                    <form method="POST" id="subscribe-form">
+                        <input class="text-field__input" type="email" placeholder="enter your e-mail" required>
+                        <button class="text-field__submit" type="image" value="Submit">
+                            <img src="./img/svg/submit_icon.svg" alt="Submit">
+                        </button>
+                    </form>
+                </div>
+
+                <div class="subscribe__divider"></div>
+
+                <div class="subscribe__terms">
+                    <span class="sub">By subscribing to our website, you have followed the terms and conditions.</span>
+                </div>
+
+            </div>
+
+            <div class="contacts__wrapper">
+
+                <div class="cta__wrapper">
+                    <a href="index.html" class="footer__logo-link">
+                        <img src="./img/svg/footer_logo.svg" alt="Logo" class="footer__logo-link" id="svg">
+                    </a>
+
+                    <div class="social-media__wrapper">
+                        <ul class="social-media__list">
+                            <li class="social-media__item">
+                                <a href="#!" class="social-media__link">
+                                    <img src="./img/svg/facebook_icon.svg" alt="FB" class="social-media__item-link"
+                                        id="svg">
+                                </a>
+                            </li>
+                            <li class="social-media__item">
+                                <a href="#!" class="social-media__link">
+                                    <img src="./img/svg/twitter_icon.svg" alt="Twitter" class="social-media__item-link"
+                                        id="svg">
+                                </a>
+                            </li>
+                            <li class="social-media__item">
+                                <a href="#!" class="social-media__link">
+                                    <img src="./img/svg/inst_icon.svg" alt="Instagram" class="social-media__item-link"
+                                        id="svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__wrapper">
+                    <h1 class="footer__titles">PAYMENT METHODS</h1>
+                    <ul class="footer__list">
+                        <li class="footer__item" id="footer__item-payment">
+                            <ul class="payment-methods__item-wrapper">
+                                <li class="payment-methods__item">
+                                    <img src="./img/svg/payment_icon/Visa.svg" alt="Visa" class="payment">
+                                </li>
+                                <li class="payment-methods__item">
+                                    <a href="#!" class="footer-link">Visa</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__item" id="footer__item-payment">
+                            <ul class="payment-methods__item-wrapper">
+                                <li class="payment-methods__item">
+                                    <img src="./img/svg/payment_icon/Master.svg" alt="MasterCard" class="payment">
+                                </li>
+                                <li class="payment-methods__item">
+                                    <a href="#!" class="footer-link">MasterCard</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__item" id="footer__item-payment">
+                            <ul class="payment-methods__item-wrapper">
+                                <li class="payment-methods__item">
+                                    <img src="./img/svg/payment_icon/Pse.svg" alt="COD" class="payment">
+                                </li>
+                                <li class="payment-methods__item">
+                                    <a href="#!" class="footer-link">COD</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__item" id="footer__item-payment">
+                            <ul class="payment-methods__item-wrapper">
+                                <li class="payment-methods__item">
+                                    <img src="./img/svg/payment_icon/Baloto.svg" alt="Indomaret/I-Saku" class="payment">
+                                </li>
+                                <li class="payment-methods__item">
+                                    <a href="#!" class="footer-link">Indomaret/I-Saku</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="helper__wrapper">
+                    <h1 class="footer__titles">Help!</h1>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#!" class="footer-link">Customer Service</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#!" class="footer-link">FAQ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#!" class="footer-link">Term and Condition</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="about__wrapper">
+                    <h1 class="footer__titles">About Us</h1>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#!" class="footer-link">Asimov.com/about</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#!" class="footer-link">Work with us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-us__wrapper">
+                    <h1 class="footer__titles">Contact Us</h1>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <span class="payment-methods__item-wrapper">
+                                <img src="./img/svg/phone_icon.svg" alt="Phone" class="payment">
+                                <a href="#!" class="footer-link">08-8080-277</a>
+                            </span>
+                        </li>
+                        <li class="footer__item">
+                            <span class="payment-methods__item-wrapper">
+                                <img src="./img/svg/mail_icon.svg" alt="Email" class="payment">
+                                <a href="#!" class="footer-link">asimovv@gmail.com</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright__wrapper">
+            <p class="copyright">④ 2022 Asimov· All rights reserved · legal notice · cookies · Privacy Policy ·
+                unsubscribe from newsletters </p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

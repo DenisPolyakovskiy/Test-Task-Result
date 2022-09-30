@@ -1,0 +1,479 @@
+/* poppins-regular - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/poppins-v20-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-600 - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+        url('../fonts/poppins-v20-latin-600.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/poppins-v20-latin-600.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/*Сброс стандартных стилей*/
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+*:hover {
+    transition: all .2s ease-in-out;
+}
+
+body {
+    font-family: 'Poppins', "Arial", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.2;
+    color: black;
+}
+
+.wrapper {
+    max-width: 1115px;
+    margin: 0 auto;
+}
+
+#svg {
+    display: block;
+}
+
+/*Header*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #E0E0E0;
+    background-color: white;
+    z-index: 500;
+}
+
+.header__wrapper {
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__item {
+    margin-top: 17px;
+}
+
+.header__link {
+    font-weight: 400;
+    font-size: 12px;
+    color: black;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.header__link:hover,
+.header__link:focus,
+.header__link:active {
+    opacity: 1;
+}
+
+
+/*Меню*/
+.menu__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 30px;
+    position: inherit;
+}
+
+.menu__item-link:hover,
+.menu__item-link:active {
+    background-color: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+}
+
+/*Контент*/
+.main {
+    padding-top: 155px;
+}
+
+.adress__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.adress__link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176.5%;
+    color: black;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+
+.adress__link:hover {
+    opacity: 1;
+}
+
+
+.text__underline {
+    font-weight: 400;
+    font-size: 12px;
+    color: black;
+    opacity: 0.6;
+    line-height: 176.5%;
+    text-decoration-line: underline;
+}
+
+.text__underline:hover {
+    opacity: 1;
+}
+
+#filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+}
+
+#display_options {
+    gap: 37px;
+}
+
+#columns {
+    gap: 17px;
+}
+
+/*Категории товаров*/
+
+.category {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 45px;
+}
+
+.change-category {
+    border: none;
+    background-color: field;
+    width: 70px;
+    height: 70px;
+}
+
+.category__cards {
+    overflow: hidden;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+
+.category__card {
+    height: 265px;
+    width: 186px;
+}
+
+.category__card-thumb {
+    display: flex;
+    width: auto;
+    height: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.category__name {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.category__card:active {
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+
+.category__card:hover {
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+/*Карточки товара*/
+
+.goods__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 73px;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 50px;
+}
+
+.goods__card {
+    margin-top: 88px;
+    max-width: 323px;
+    max-height: 510px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 7px;
+}
+
+.goods__card-thumb {
+    width: 95%;
+}
+
+
+.goods__card:hover {
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+
+#goods_name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176.5%;
+    opacity: 0.8;
+    margin-top: 25.9px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#shop_name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 176.5%;
+    text-decoration-line: underline;
+    opacity: 0.8;
+    margin-top: 6px;
+}
+
+#seller_name {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#rating_icon {
+    padding-left: 7px;
+}
+
+#name_rating {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#n_r_item-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#shop_rating {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 176.5%;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 176.5%;
+}
+
+/*стили footer*/
+
+.contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: inherit;
+    justify-items: right;
+    position: inherit;
+    gap: 30px;
+    margin-top: 81px;
+}
+
+.subscribe__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 164px;
+    margin-top: 203px;
+    border-bottom: 0.5px solid #BDBDBD;
+}
+
+.join {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 176.5%;
+}
+
+/*Сброс стандартных стилей формы*/
+input[type="email"] {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+}
+
+#subscribe-form {
+    margin-bottom: 1rem;
+    border-bottom: 1.5px solid #4F4F4F;
+    display: flex;
+}
+
+.text-field__input {
+    display: block;
+    width: 460.5px;
+    height: 40px;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176.5%;
+    border: none;
+}
+
+.subscribe__terms {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176.5%;
+    opacity: 0.7;
+}
+
+.text-field__submit {
+    border: none;
+    background-color: field;
+    width: auto;
+    height: auto;
+}
+
+.subscribe__divider {
+    width: 0px;
+    height: 50px;
+    border: 0.5px solid #BDBDBD;
+}
+
+.cta__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 51px;
+    margin-bottom: 81px;
+    margin-right: 104px;
+}
+
+.social-media__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 20px;
+    position: inherit;
+}
+
+.social-media__item-link:hover {
+    filter: invert(100%);
+}
+
+.footer__titles {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 176.5%;
+    margin-bottom: 21px;
+}
+
+.footer__item {
+    gap: 10px;
+    height: 21px;
+    margin-bottom: 10px;
+}
+
+#footer__item-payment {
+    height: 21.84px;
+    gap: 10px;
+
+}
+
+.footer-link {
+    font-weight: 400;
+    font-size: 12px;
+    color: black;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus,
+.footer-link:active {
+    opacity: 1;
+}
+
+.payment-methods__item-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.copyright__wrapper {
+    display: flex;
+    height: 50px;
+    background-color: black;
+    margin-top: 57.03px;
+    align-items: center;
+}
+
+.copyright {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176.5%;
+    color: #F2F2F2;
+    opacity: 0.7;
+    height: 21px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
